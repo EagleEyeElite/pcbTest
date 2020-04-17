@@ -1,0 +1,533 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 01.-KiCad-Test-Project-rescue:ATMEGA328P-AU U1
+U 1 1 5A7DC253
+P 3400 3250
+F 0 "U1" H 2650 4500 50  0000 L BNN
+F 1 "ATMEGA328P-AU" H 3300 1850 50  0000 L BNN
+F 2 "Housings_QFP:TQFP-32_7x7mm_Pitch0.8mm" H 3400 3250 50  0001 C CIN
+F 3 "" H 3400 3250 50  0001 C CNN
+	1    3400 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L 01.-KiCad-Test-Project-rescue:USB_OTG J1
+U 1 1 5A7DC27E
+P 1350 1400
+F 0 "J1" H 1150 1850 50  0000 L CNN
+F 1 "USB_OTG" H 1150 1750 50  0000 L CNN
+F 2 "Libary:USB_Micro_Conn_Reichelt" H 1500 1350 50  0001 C CNN
+F 3 "" H 1500 1350 50  0001 C CNN
+	1    1350 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L 01.-KiCad-Test-Project-rescue:Crystal 20MHZ1
+U 1 1 5A7DC309
+P 4800 2850
+F 0 "20MHZ1" H 4800 3000 50  0000 C CNN
+F 1 "Crystal" H 4800 2700 50  0000 C CNN
+F 2 "Crystals:Crystal_HC49-4H_Vertical" H 4800 2850 50  0001 C CNN
+F 3 "" H 4800 2850 50  0001 C CNN
+	1    4800 2850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4400 2750 4600 2750
+Wire Wire Line
+	4600 2750 4600 2700
+Wire Wire Line
+	4600 2700 4800 2700
+Wire Wire Line
+	4400 2850 4600 2850
+Wire Wire Line
+	4600 2850 4600 3000
+Wire Wire Line
+	4600 3000 4800 3000
+Wire Wire Line
+	2500 2050 2500 2150
+Connection ~ 2500 2250
+Connection ~ 2500 2450
+Wire Wire Line
+	2500 4250 2500 4350
+Connection ~ 2500 4350
+$Comp
+L 01.-KiCad-Test-Project-rescue:CP 22pF1
+U 1 1 5A7DC3CC
+P 5150 2700
+F 0 "22pF1" V 5250 2750 50  0000 L CNN
+F 1 "CP" H 5175 2600 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_Tantal_D4.5mm_P2.50mm" H 5188 2550 50  0001 C CNN
+F 3 "" H 5150 2700 50  0001 C CNN
+	1    5150 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 01.-KiCad-Test-Project-rescue:CP 22pF2
+U 1 1 5A7DC43B
+P 5150 3000
+F 0 "22pF2" V 5000 3050 50  0000 L CNN
+F 1 "CP" H 5175 2900 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_Tantal_D4.5mm_P2.50mm" H 5188 2850 50  0001 C CNN
+F 3 "" H 5150 3000 50  0001 C CNN
+	1    5150 3000
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4800 2700
+Connection ~ 4800 3000
+Wire Wire Line
+	5300 2700 5300 3000
+Wire Wire Line
+	6350 3000 6350 3600
+$Comp
+L 01.-KiCad-Test-Project-rescue:SW_Push SW1
+U 1 1 5A7DC5E7
+P 6100 3600
+F 0 "SW1" H 6150 3700 50  0000 L CNN
+F 1 "SW_Push" H 6100 3540 50  0000 C CNN
+F 2 "Buttons_Switches_THT:SW_PUSH_6mm" H 6100 3800 50  0001 C CNN
+F 3 "" H 6100 3800 50  0001 C CNN
+	1    6100 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 3600 5800 3600
+$Comp
+L 01.-KiCad-Test-Project-rescue:R 10K1
+U 1 1 5A7DC63A
+P 6200 3800
+F 0 "10K1" V 6280 3800 50  0000 C CNN
+F 1 "R" V 6200 3800 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 6130 3800 50  0001 C CNN
+F 3 "" H 6200 3800 50  0001 C CNN
+	1    6200 3800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6300 3600 6350 3600
+Connection ~ 5300 3000
+Wire Wire Line
+	5800 2200 5800 3600
+Wire Wire Line
+	5800 3800 6050 3800
+Connection ~ 5800 3600
+$Comp
+L 01.-KiCad-Test-Project-rescue:+5V #PWR01
+U 1 1 5A7DC6F6
+P 6450 3800
+F 0 "#PWR01" H 6450 3650 50  0001 C CNN
+F 1 "+5V" H 6450 3940 50  0000 C CNN
+F 2 "" H 6450 3800 50  0001 C CNN
+F 3 "" H 6450 3800 50  0001 C CNN
+	1    6450 3800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6350 3800 6450 3800
+$Comp
+L 01.-KiCad-Test-Project-rescue:GND #PWR02
+U 1 1 5A7DC753
+P 6450 3600
+F 0 "#PWR02" H 6450 3350 50  0001 C CNN
+F 1 "GND" H 6450 3450 50  0000 C CNN
+F 2 "" H 6450 3600 50  0001 C CNN
+F 3 "" H 6450 3600 50  0001 C CNN
+	1    6450 3600
+	0    -1   -1   0   
+$EndComp
+Connection ~ 6350 3600
+$Comp
+L 01.-KiCad-Test-Project-rescue:+5V #PWR03
+U 1 1 5A7DC7C7
+P 2500 2050
+F 0 "#PWR03" H 2500 1900 50  0001 C CNN
+F 1 "+5V" H 2500 2190 50  0000 C CNN
+F 2 "" H 2500 2050 50  0001 C CNN
+F 3 "" H 2500 2050 50  0001 C CNN
+	1    2500 2050
+	1    0    0    -1  
+$EndComp
+Connection ~ 2500 2150
+$Comp
+L 01.-KiCad-Test-Project-rescue:GND #PWR04
+U 1 1 5A7DC818
+P 2500 4550
+F 0 "#PWR04" H 2500 4300 50  0001 C CNN
+F 1 "GND" H 2500 4400 50  0000 C CNN
+F 2 "" H 2500 4550 50  0001 C CNN
+F 3 "" H 2500 4550 50  0001 C CNN
+	1    2500 4550
+	1    0    0    -1  
+$EndComp
+Connection ~ 2500 4450
+$Comp
+L 01.-KiCad-Test-Project-rescue:+5V #PWR05
+U 1 1 5A7DC88C
+P 2000 1200
+F 0 "#PWR05" H 2000 1050 50  0001 C CNN
+F 1 "+5V" H 2000 1340 50  0000 C CNN
+F 2 "" H 2000 1200 50  0001 C CNN
+F 3 "" H 2000 1200 50  0001 C CNN
+	1    2000 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L 01.-KiCad-Test-Project-rescue:GND #PWR06
+U 1 1 5A7DC8B0
+P 1350 1900
+F 0 "#PWR06" H 1350 1650 50  0001 C CNN
+F 1 "GND" H 1350 1750 50  0000 C CNN
+F 2 "" H 1350 1900 50  0001 C CNN
+F 3 "" H 1350 1900 50  0001 C CNN
+	1    1350 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 1800 1350 1800
+Wire Wire Line
+	1350 1800 1350 1900
+Wire Wire Line
+	1650 1200 1900 1200
+$Comp
+L 01.-KiCad-Test-Project-rescue:Conn_02x03_Odd_Even ICSP1
+U 1 1 5A7DC956
+P 6050 2100
+F 0 "ICSP1" H 6100 2300 50  0000 C CNN
+F 1 "Conn_02x03_Odd_Even" H 6100 1900 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm" H 6050 2100 50  0001 C CNN
+F 3 "" H 6050 2100 50  0001 C CNN
+	1    6050 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 2550 4900 2550
+Wire Wire Line
+	4900 2550 4900 2000
+Wire Wire Line
+	4900 2000 5850 2000
+Wire Wire Line
+	4400 2450 6400 2450
+Wire Wire Line
+	6400 2450 6400 2100
+Wire Wire Line
+	6400 2100 6350 2100
+$Comp
+L 01.-KiCad-Test-Project-rescue:GND #PWR07
+U 1 1 5A7DCA7B
+P 6450 2200
+F 0 "#PWR07" H 6450 1950 50  0001 C CNN
+F 1 "GND" H 6450 2050 50  0000 C CNN
+F 2 "" H 6450 2200 50  0001 C CNN
+F 3 "" H 6450 2200 50  0001 C CNN
+	1    6450 2200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6350 2200 6450 2200
+$Comp
+L 01.-KiCad-Test-Project-rescue:+5V #PWR08
+U 1 1 5A7DCACA
+P 6450 2000
+F 0 "#PWR08" H 6450 1850 50  0001 C CNN
+F 1 "+5V" H 6450 2140 50  0000 C CNN
+F 2 "" H 6450 2000 50  0001 C CNN
+F 3 "" H 6450 2000 50  0001 C CNN
+	1    6450 2000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6350 2000 6450 2000
+Wire Wire Line
+	5850 2100 4850 2100
+Wire Wire Line
+	4850 2100 4850 2650
+Wire Wire Line
+	4850 2650 4400 2650
+Wire Wire Line
+	5850 2200 5800 2200
+$Comp
+L 01.-KiCad-Test-Project-rescue:Conn_01x05_Female J2
+U 1 1 5A7DCDF2
+P 4800 3300
+F 0 "J2" H 4800 3600 50  0000 C CNN
+F 1 "Conn_01x05_Female" H 4800 2950 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x05_Pitch2.54mm" H 4800 3300 50  0001 C CNN
+F 3 "" H 4800 3300 50  0001 C CNN
+	1    4800 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L 01.-KiCad-Test-Project-rescue:LED D1
+U 1 1 5A7DCEEC
+P 1900 1500
+F 0 "D1" H 1900 1600 50  0000 C CNN
+F 1 "LED" H 1900 1400 50  0000 C CNN
+F 2 "LEDs:LED_0603_HandSoldering" H 1900 1500 50  0001 C CNN
+F 3 "" H 1900 1500 50  0001 C CNN
+	1    1900 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 01.-KiCad-Test-Project-rescue:R R1
+U 1 1 5A7DD001
+P 1650 1800
+F 0 "R1" V 1730 1800 50  0000 C CNN
+F 1 "220" V 1650 1800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 1580 1800 50  0001 C CNN
+F 3 "" H 1650 1800 50  0001 C CNN
+	1    1650 1800
+	0    1    1    0   
+$EndComp
+Connection ~ 1350 1800
+Wire Wire Line
+	1900 1350 1900 1200
+Connection ~ 1900 1200
+Wire Wire Line
+	1900 1650 1900 1800
+Wire Wire Line
+	1900 1800 1800 1800
+$Comp
+L 01.-KiCad-Test-Project-rescue:7SEGMENT_CA U2
+U 1 1 5A7DD618
+P 5200 4500
+F 0 "U2" H 5100 4875 50  0000 R CNN
+F 1 "7SEGMENT_CA" H 5100 4800 50  0000 R CNN
+F 2 "Displays_7-Segment:7SegmentLED_LTS6760_LTS6780" H 5650 4200 50  0001 L CNN
+F 3 "" H 5200 4490 50  0001 L CNN
+	1    5200 4500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5600 4600 5600 4500
+$Comp
+L 01.-KiCad-Test-Project-rescue:R R5
+U 1 1 5A7DD86B
+P 5850 4500
+F 0 "R5" V 5930 4500 50  0000 C CNN
+F 1 "220" V 5850 4500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5780 4500 50  0001 C CNN
+F 3 "" H 5850 4500 50  0001 C CNN
+	1    5850 4500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6000 4500 6100 4500
+$Comp
+L 01.-KiCad-Test-Project-rescue:GND #PWR09
+U 1 1 5A7DD8FC
+P 6100 4500
+F 0 "#PWR09" H 6100 4250 50  0001 C CNN
+F 1 "GND" H 6100 4350 50  0000 C CNN
+F 2 "" H 6100 4500 50  0001 C CNN
+F 3 "" H 6100 4500 50  0001 C CNN
+	1    6100 4500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4400 3750 4750 3750
+Wire Wire Line
+	4750 3750 4750 4100
+Wire Wire Line
+	4750 4100 4800 4100
+Wire Wire Line
+	4400 3850 4700 3850
+Wire Wire Line
+	4700 3850 4700 4200
+Wire Wire Line
+	4700 4200 4800 4200
+Wire Wire Line
+	4400 3950 4650 3950
+Wire Wire Line
+	4650 3950 4650 4300
+Wire Wire Line
+	4650 4300 4800 4300
+Wire Wire Line
+	4400 4050 4600 4050
+Wire Wire Line
+	4600 4050 4600 4400
+Wire Wire Line
+	4600 4400 4800 4400
+Wire Wire Line
+	4400 4150 4550 4150
+Wire Wire Line
+	4550 4150 4550 4500
+Wire Wire Line
+	4550 4500 4800 4500
+Wire Wire Line
+	4400 4250 4500 4250
+Wire Wire Line
+	4500 4250 4500 4600
+Wire Wire Line
+	4500 4600 4800 4600
+Wire Wire Line
+	4400 4350 4450 4350
+Wire Wire Line
+	4450 4350 4450 4700
+Wire Wire Line
+	4450 4700 4800 4700
+Wire Wire Line
+	4400 4450 4400 4900
+Wire Wire Line
+	4400 4900 4800 4900
+Wire Wire Line
+	5600 4500 5700 4500
+$Comp
+L 01.-KiCad-Test-Project-rescue:LED D3
+U 1 1 5A7DE25F
+P 4550 1450
+F 0 "D3" H 4550 1550 50  0000 C CNN
+F 1 "LED" H 4550 1350 50  0000 C CNN
+F 2 "LEDs:LED_0603_HandSoldering" H 4550 1450 50  0001 C CNN
+F 3 "" H 4550 1450 50  0001 C CNN
+	1    4550 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L 01.-KiCad-Test-Project-rescue:LED D4
+U 1 1 5A7DE2A6
+P 4850 1450
+F 0 "D4" H 4850 1550 50  0000 C CNN
+F 1 "LED" H 4850 1350 50  0000 C CNN
+F 2 "LEDs:LED_0603_HandSoldering" H 4850 1450 50  0001 C CNN
+F 3 "" H 4850 1450 50  0001 C CNN
+	1    4850 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L 01.-KiCad-Test-Project-rescue:LED D2
+U 1 1 5A7DE306
+P 4250 1450
+F 0 "D2" H 4250 1550 50  0000 C CNN
+F 1 "LED" H 4250 1350 50  0000 C CNN
+F 2 "LEDs:LED_0603_HandSoldering" H 4250 1450 50  0001 C CNN
+F 3 "" H 4250 1450 50  0001 C CNN
+	1    4250 1450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4400 2150 4400 1750
+Wire Wire Line
+	4400 1750 4250 1750
+Wire Wire Line
+	4250 1750 4250 1600
+Wire Wire Line
+	4400 2250 4550 2250
+Wire Wire Line
+	4550 2250 4550 1600
+Wire Wire Line
+	4400 2350 4700 2350
+Wire Wire Line
+	4700 2350 4700 1750
+Wire Wire Line
+	4700 1750 4850 1750
+Wire Wire Line
+	4850 1750 4850 1600
+$Comp
+L 01.-KiCad-Test-Project-rescue:R R2
+U 1 1 5A7DE4A8
+P 4250 1000
+F 0 "R2" V 4330 1000 50  0000 C CNN
+F 1 "220" V 4250 1000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4180 1000 50  0001 C CNN
+F 3 "" H 4250 1000 50  0001 C CNN
+	1    4250 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 01.-KiCad-Test-Project-rescue:R R3
+U 1 1 5A7DE551
+P 4550 1000
+F 0 "R3" V 4630 1000 50  0000 C CNN
+F 1 "220" V 4550 1000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4480 1000 50  0001 C CNN
+F 3 "" H 4550 1000 50  0001 C CNN
+	1    4550 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 01.-KiCad-Test-Project-rescue:R R4
+U 1 1 5A7DE59F
+P 4850 1000
+F 0 "R4" V 4930 1000 50  0000 C CNN
+F 1 "220" V 4850 1000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4780 1000 50  0001 C CNN
+F 3 "" H 4850 1000 50  0001 C CNN
+	1    4850 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 1300 4250 1150
+Wire Wire Line
+	4550 1300 4550 1150
+Wire Wire Line
+	4850 1300 4850 1150
+Wire Wire Line
+	4000 850  4250 850 
+Connection ~ 4550 850 
+$Comp
+L 01.-KiCad-Test-Project-rescue:GND #PWR010
+U 1 1 5A7DE7E8
+P 4000 850
+F 0 "#PWR010" H 4000 600 50  0001 C CNN
+F 1 "GND" H 4000 700 50  0000 C CNN
+F 2 "" H 4000 850 50  0001 C CNN
+F 3 "" H 4000 850 50  0001 C CNN
+	1    4000 850 
+	0    1    1    0   
+$EndComp
+Connection ~ 4250 850 
+Wire Wire Line
+	5300 3000 6350 3000
+Wire Wire Line
+	4400 3100 4600 3100
+Wire Wire Line
+	4400 3200 4600 3200
+Wire Wire Line
+	4400 3300 4600 3300
+Wire Wire Line
+	4400 3400 4600 3400
+Wire Wire Line
+	4400 3500 4600 3500
+Wire Wire Line
+	2500 2250 2500 2450
+Wire Wire Line
+	2500 2450 2500 2750
+Wire Wire Line
+	2500 4350 2500 4450
+Wire Wire Line
+	4800 2700 5000 2700
+Wire Wire Line
+	4800 3000 5000 3000
+Wire Wire Line
+	5800 3600 5900 3600
+Wire Wire Line
+	5800 3600 5800 3800
+Wire Wire Line
+	6350 3600 6450 3600
+Wire Wire Line
+	2500 2150 2500 2250
+Wire Wire Line
+	2500 4450 2500 4550
+Wire Wire Line
+	1350 1800 1500 1800
+Wire Wire Line
+	1900 1200 2000 1200
+Wire Wire Line
+	4550 850  4850 850 
+Wire Wire Line
+	4250 850  4550 850 
+$EndSCHEMATC
